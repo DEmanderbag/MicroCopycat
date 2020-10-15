@@ -1,0 +1,184 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Neutral colors */
+  --black001: #080808;
+  --gray001: #e9ebea;
+  --gray002: #f7f7f7;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* navigation */
+nav {
+  margin: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.menu,
+.line {
+  z-index: 51;
+}
+
+.line {
+  width: 1.25rem;
+  height: 0.125rem;
+  background-color: black;
+  transition: 0.2s ease-out all;
+}
+
+.line:first-of-type {
+  margin-bottom: 0.25rem;
+}
+
+.line--left {
+  margin-bottom: 0;
+  transform: rotate(-45deg) translateX(-0.25rem);
+}
+
+.line--right {
+  transform: rotate(45deg) translateX(-0.25rem);
+}
+
+.logo {
+  margin: 0 auto;
+  width: 7rem;
+}
+
+.logo img {
+  width: 100%;
+}
+
+.mobile__menu {
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--gray001);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  transform: translateX(-100%);
+  transition: 0.3s ease-out all;
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.mobile__menu a {
+  font-size: 1.25rem;
+  color: black;
+  font-weight: 700;
+}
+
+.mobile__menu li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+/* Header part */
+.hero__section {
+  background-color: var(--gray001);
+  width: 100%;
+}
+
+/* carousel styles */
+
+.carousel {
+  height: 36rem;
+  overflow: hidden;
+}
+
+.carousel__track {
+  position: relative;
+  width: 100%;
+  height: 34rem;
+  transition: 0.3s ease-out transform;
+}
+
+.carousel__slide {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
+}
+
+.carousel__description h1,
+.carousel__description p {
+  font-weight: 400;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.carousel__image {
+  height: 60%;
+}
+
+.carousel__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel__nav {
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel__indicator {
+  width: 2.5rem;
+  height: 0.25rem;
+  background-color: gray;
+}
+
+.carousel__indicator:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.active-dot {
+  background-color: var(--black001);
+}
