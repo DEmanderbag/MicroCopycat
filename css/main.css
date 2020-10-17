@@ -200,7 +200,7 @@ nav {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .card {
@@ -345,4 +345,73 @@ nav {
 
 .blog--xbox {
   padding-top: 3rem;
+}
+
+footer {
+  padding: 0 1rem 1rem 1rem;
+}
+
+.footer__logo {
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.footer__logo img {
+  width: 6rem;
+}
+
+.list:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.list li:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.list a {
+  color: var(--black002);
+  font-size: 0.85rem;
+}
+
+.list__bolder {
+  font-weight: 600;
+  color: var(--black002);
+}
+
+.footer__products {
+  padding: 1rem 0;
+  border-top: 1px solid var(--black002);
+  border-bottom: 1px solid var(--black002);
+}
+
+.product {
+  display: flex;
+  align-items: center;
+}
+.product:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.product__img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.product__name {
+  color: var(--black002);
+  font-weight: 600;
+}
+
+.footer__copy {
+  display: flex;
+  flex-direction: column;
+}
+
+.copy__language {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.copy__language img {
+  margin-right: 0.5rem;
 }
