@@ -400,6 +400,7 @@ footer {
   display: flex;
   align-items: center;
 }
+
 .product:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -561,5 +562,39 @@ footer {
 
   .item-eleven {
     grid-row: span 2;
+  }
+
+  footer {
+    margin-top: 5rem;
+    padding: 0;
+  }
+
+  .list__wrapper,
+  .footer__products {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .product:not(:last-child) {
+    margin-bottom: 0rem;
+  }
+
+  .product {
+    padding: 1rem 0;
+  }
+
+  .footer__copy {
+    flex-direction: row;
+  }
+
+  .footer__copy .list {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  .footer__copy li:not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 1rem;
   }
 }
