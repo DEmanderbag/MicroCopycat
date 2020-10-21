@@ -429,8 +429,42 @@ footer {
   margin-right: 0.5rem;
 }
 
+/* =============================
+      Start of a store page 
+     ============================= */
+
+.sub__menu {
+  display: none;
+}
+
+.hero--store {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.hero__image {
+  height: 20rem;
+}
+.hero__image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.hero__text {
+  padding: 0 2.5rem;
+}
+
+.hero__text > * {
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 1220px) {
   nav,
+  .sub__menu,
   .hero__section,
   .products,
   footer {
@@ -439,7 +473,7 @@ footer {
   }
 
   nav {
-    height: 6rem;
+    height: 4rem;
     align-items: center;
   }
 
@@ -467,7 +501,7 @@ footer {
   }
 
   .desktop--menu li:not(:last-child) {
-    margin-right: 3rem;
+    margin-right: 4rem;
   }
 
   .carousel {
@@ -596,5 +630,33 @@ footer {
   .footer__copy li:not(:last-child) {
     margin-bottom: 0;
     margin-right: 1rem;
+  }
+
+  /* =============================
+      Start of a store page 
+     ============================= */
+
+  .sub__menu {
+    border-top: 1px solid var(--gray001);
+    border-bottom: 1px solid var(--gray001);
+    padding: 0.5rem 0;
+    display: flex;
+    margin-bottom: 2rem;
+  }
+
+  .header--link {
+    margin-right: auto;
+  }
+
+  .sub__menu li:not(:last-child) {
+    padding-right: 2rem;
+  }
+
+  .hero__image {
+    height: 30rem;
+  }
+
+  .hero__text {
+    width: 45rem;
   }
 }
