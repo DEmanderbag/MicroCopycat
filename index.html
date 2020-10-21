@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" href="assets/icons/microsoft.png" />
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap"
     rel="stylesheet">
   <title>Copycat</title>
@@ -13,11 +14,20 @@
 <body>
   <header>
     <nav>
-      <div class="menu">
+      <div class="menu__line">
         <div class="line line--one"></div>
         <div class="line line--two"></div>
       </div>
-      <ul class="mobile__menu">
+      <ul class="menu mobile--menu">
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Windows</a></li>
+        <li><a href="#">Surface</a></li>
+        <li><a href="#">Xbox</a></li>
+        <li><a href="#">Office</a></li>
+        <li><a href="#">Hololens</a></li>
+        <li><a href="#">Support</a></li>
+      </ul>
+      <ul class="menu desktop--menu">
         <li><a href="#">Store</a></li>
         <li><a href="#">Windows</a></li>
         <li><a href="#">Surface</a></li>
@@ -119,51 +129,54 @@
       </div>
     </div>
 
-    <div class="blog blog--big">
-      <img class="img--cover" src="assets/images/Surface-Go-2-Context-6.jpg" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--light">Surface Pro</p>
-        <h1 class="blog__title title--light">Create the imposable</h1>
-        <p class="blog__info info--light">The ultimate laptop for running powerful apps</p>
-      </div>
-    </div>
+    <div class="special__grid">
 
-    <div class="blog blog--medium">
-      <img class="img--fit" src="assets/images/Surface-Studio-2-4-removebg-preview.png" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--primary">Surface Studio</p>
-        <h1 class="blog__title title--dark">A brilliant screen for your ideas</h1>
-        <p class="blog__info info--dark">Surface Studio, with its strikingly large and incredibly
-          thin
-          28"
-          PixelSenses<sup>&#8482;</sup> Display, lets you visualize ideas</p>
+      <div class="blog blog--big item-one">
+        <img class="img--cover" src="assets/images/Surface-Go-2-Context-6.jpg" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--light">Surface Pro</p>
+          <h1 class="blog__title title--light">Create the imposable</h1>
+          <p class="blog__info info--light">The ultimate laptop for running powerful apps</p>
+        </div>
       </div>
-    </div>
 
-    <div class="blog blog--small">
-      <img class="img--cover" src="assets/images/MSSurface_ProLTE_MoProCar_Lifestyle_RGB_FY18.png"
-        alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--light">Surface Laptop</p>
-        <h1 class="blog__title title--light">Do the things anywhere</h1>
+      <div class="blog blog--medium">
+        <img class="img--fit" src="assets/images/Surface-Studio-2-4-removebg-preview.png" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--primary">Surface Studio</p>
+          <h1 class="blog__title title--dark">A brilliant screen for your ideas</h1>
+          <p class="blog__info info--dark">Surface Studio, with its strikingly large and incredibly
+            thin
+            28"
+            PixelSenses<sup>&#8482;</sup> Display, lets you visualize ideas</p>
+        </div>
       </div>
-    </div>
 
-    <div class="blog blog--medium">
-      <img class="img--fit img--book" src="assets/images/Surface-Book-3-Context-2.jpg" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--primary">Surface Book 2</p>
-        <h1 class="blog__title title--dark">Why is creativity important</h1>
-        <p class="blog__info info--dark">Run professional-grade software all day with the latest
-          quad-core Intel<sup>&#174;</sup> Core<sup>&#8482;</sup> processor</p>
+      <div class="blog blog--small item-three">
+        <img class="img--cover" src="assets/images/MSSurface_ProLTE_MoProCar_Lifestyle_RGB_FY18.png"
+          alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--light">Surface Laptop</p>
+          <h1 class="blog__title title--light">Do the things anywhere</h1>
+        </div>
       </div>
-    </div>
-    <div class="blog blog--small blog--dark">
-      <img class="img--fit img--xbox"
-        src="assets/images/579fa122-7ebf-43a3-a53a-58ba27805ba5-removebg-preview.png" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--xbox">Xbox One X</p>
-        <h1 class="blog__title title--light">Immersive true 4k gaming</h1>
+
+      <div class="blog blog--medium item-four">
+        <img class="img--fit img--book" src="assets/images/Surface-Book-3-Context-2.jpg" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--primary">Surface Book 2</p>
+          <h1 class="blog__title title--dark">Why is creativity important</h1>
+          <p class="blog__info info--dark">Run professional-grade software all day with the latest
+            quad-core Intel<sup>&#174;</sup> Core<sup>&#8482;</sup> processor</p>
+        </div>
+      </div>
+      <div class="blog blog--small blog--dark item-five">
+        <img class="img--fit img--xbox"
+          src="assets/images/579fa122-7ebf-43a3-a53a-58ba27805ba5-removebg-preview.png" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--xbox">Xbox One X</p>
+          <h1 class="blog__title title--light">Immersive true 4k gaming</h1>
+        </div>
       </div>
     </div>
 
@@ -184,45 +197,46 @@
       </div>
     </div>
 
-    <div class="blog blog--big blog--medium">
-      <img class="img--fit img--skype" src="assets/images/3-3grid-main-page-min.png" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--primary">New Skype</p>
-        <h1 class="blog__title title--dark">Join the millions talking on Skype</h1>
+    <div class="second__grid">
+      <div class="blog blog--big blog--medium item-eight">
+        <img class="img--fit img--skype" src="assets/images/3-3grid-main-page-min.png" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--primary">New Skype</p>
+          <h1 class="blog__title title--dark">Join the millions talking on Skype</h1>
+        </div>
+      </div>
+
+      <div class="blog blog--big item-nine">
+        <img class="img--cover" src="assets/images/71f523e05aaee2cca4e3ec2a241ce8ef.jpg" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--light">Windows 10</p>
+          <h1 class="blog__title title--light">The best Windows</h1>
+          <p class="blog__info info--light">Bringing you new ways to make the most of your time and
+            features that help you create and connect across devices</p>
+        </div>
+      </div>
+
+      <div class="blog blog--big item-ten">
+        <img class="img--cover" src="assets/images/Dual-Inking-on-Surface-Hub.jpg" alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--light">Microsoft Office</p>
+          <h1 class="blog__title title--light">Awesome Coloration</h1>
+          <p class="blog__info info--light">Team work with new Office 365 it's easy</p>
+        </div>
+      </div>
+
+
+      <div class="blog blog--big blog--medium item-twelve">
+        <img class="img--fit img--azure" src="assets/images/portal-advisor-recommendations.jpg"
+          alt="">
+        <div class="blog__group">
+          <p class="blog__tag tag--primary">Microsoft Azure</p>
+          <h1 class="blog__title title--dark">Your vision. Your cloud.</h1>
+          <p class="blog__info info--dark">Turn your ideas into solutions faster using a trusted
+            cloud that is designed for you.</p>
+        </div>
       </div>
     </div>
-
-    <div class="blog blog--big">
-      <img class="img--cover" src="assets/images/71f523e05aaee2cca4e3ec2a241ce8ef.jpg" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--light">Windows 10</p>
-        <h1 class="blog__title title--light">The best Windows</h1>
-        <p class="blog__info info--light">Bringing you new ways to make the most of your time and
-          features that help you create and connect across devices</p>
-      </div>
-    </div>
-
-    <div class="blog blog--big">
-      <img class="img--cover" src="assets/images/Dual-Inking-on-Surface-Hub.jpg" alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--light">Microsoft Office</p>
-        <h1 class="blog__title title--light">Awesome Coloration</h1>
-        <p class="blog__info info--light">Team work with new Office 365 it's easy</p>
-      </div>
-    </div>
-
-
-    <div class="blog blog--big blog--medium">
-      <img class="img--fit img--azure" src="assets/images/portal-advisor-recommendations.jpg"
-        alt="">
-      <div class="blog__group">
-        <p class="blog__tag tag--primary">Microsoft Azure</p>
-        <h1 class="blog__title title--dark">Your vision. Your cloud.</h1>
-        <p class="blog__info info--dark">Turn your ideas into solutions faster using a trusted
-          cloud that is designed for you.</p>
-      </div>
-    </div>
-
 
     <div class="blog blog--big blog--wide">
       <img class="img--cover" src="assets/images/xboxate3.jpg" alt="">
@@ -233,7 +247,7 @@
     </div>
   </section>
 
-  <footer>
+  <!-- <footer>
     <div class="footer__logo">
       <img src="assets/icons/microsoft-logo.png" alt="">
     </div>
@@ -334,7 +348,7 @@
         <li><a href="#">&#169; Microsoft 2018</a></li>
       </ul>
     </div>
-  </footer>
+  </footer> -->
   <script src="app.js"></script>
 </body>
 

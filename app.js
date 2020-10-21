@@ -1,7 +1,7 @@
-const menuBlock = document.querySelector(".menu");
+const menuBlock = document.querySelector(".menu__line");
 const listLine1 = document.querySelector(".line--one");
 const listLine2 = document.querySelector(".line--two");
-const mobileMenu = document.querySelector(".mobile__menu");
+const mobileMenu = document.querySelector(".mobile--menu");
 
 menuBlock.addEventListener("click", () => {
   listLine1.classList.toggle("line--left");
